@@ -1,0 +1,81 @@
+/* ../../../../../tmp/tmp-4120-0EgZbmPCZP9t/custom_ethiotop/custom_ethiotop/public/scss/custom-desk.bundle.css */
+.sidebar-item-container {
+}
+.sidebar-item-container .desk-sidebar-item {
+  margin: 2px 0;
+  padding: 3px 3px;
+  border-radius: 4px;
+  box-shadow: none;
+}
+.sidebar-item-container .desk-sidebar-item:not(:last-child) {
+  margin-bottom: 5px;
+}
+.sidebar-item-container .desk-sidebar-item + .desk-sidebar-item {
+  border-top: none;
+  margin-top: 5px;
+}
+.sidebar-item-container .desk-sidebar-item:hover {
+  background-color: rgba(65, 50, 50, 0.07);
+}
+.sidebar-item-container .desk-sidebar-item.selected {
+  background-color: rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+.layout-main-section .widget.shortcut-widget-box {
+  border: 1px solid #757373;
+  border-radius: 14px;
+  padding: 8px;
+  height: 120px;
+  transition: all 0.3s ease;
+}
+.layout-main-section .widget.shortcut-widget-box:hover {
+  background: linear-gradient(to right, #1B5CAF, #337BD6);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+.layout-main-section .widget.shortcut-widget-box:hover .indicator-pill {
+  color: white;
+}
+.layout-main-section .widget.shortcut-widget-box:hover .widget-title {
+  color: white !important;
+}
+.layout-main-section .widget.ce-block_content,
+.layout-main-section .widget .ce-block_content {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  transform: none;
+  transition: none;
+}
+.layout-main-section .widget.links-widget-box {
+  padding: 10px;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  transform: none;
+  transition: none;
+  background-color: white;
+}
+.layout-main-section .widget.shortcut-widget-box .indicator-pill {
+  font-weight: 780;
+  height: 80px;
+  background: none;
+  font-size: 20px;
+}
+.layout-main-section .widget .widget-head {
+  display: inline;
+}
+.layout-main-section .widget.links-widget-box .widget-head .widget-label .widget-title {
+  font-weight: 880;
+}
+.layout-main-section .btn:not(.btn-md):not(.btn-lg),
+.layout-main-section div#driver-popover-item .driver-popover-footer button:not(.btn-md):not(.btn-lg) {
+  width: 100px;
+  height: 36px;
+}
+.layout-main-section .btn:not(.btn-md):not(.btn-lg):hover,
+.layout-main-section div#driver-popover-item .driver-popover-footer button:not(.btn-md):not(.btn-lg):hover {
+  background: linear-gradient(to right, #1B5CAF, #337BD6);
+  color: white !important;
+}
+/*# sourceMappingURL=custom-desk.bundle.L3E5OYPR.css.map */

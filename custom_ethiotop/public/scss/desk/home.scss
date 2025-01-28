@@ -1,0 +1,106 @@
+
+.sidebar-item-container {
+    /* Adjusting container for overall layout */
+    // padding: 5px 0; /* Keeps the minimal vertical space around the container */
+    
+    .desk-sidebar-item {
+        /* Adjusting individual module spacing */
+        margin: 2px 0; /* Reduced from 5px back to 2px for tighter vertical space */
+        padding: 3px 3px; /* Reduced padding inside each module for a less spacious look */
+        border-radius: 4px; /* Keeps the rounded corners */
+
+        /* Styling for better visual separation */
+        &:not(:last-child) {
+            margin-bottom: 5px; /* Reduced from 15px to 5px for closer spacing */
+        }
+
+        /* Removes shadow for a cleaner, less spaced-out look */
+        box-shadow: none;
+
+        /* Visual separator between modules */
+        & + .desk-sidebar-item {
+            border-top: none;
+            margin-top: 5px; /* Reduced from 15px to 5px for less space between modules */
+        }
+
+        /* Hover effect for better interactivity */
+        &:hover {
+            background-color: rgba(65, 50, 50, 0.07);
+        }
+
+        /* Styling for the selected module */
+        &.selected {
+            background-color: rgba(0, 0, 0, 0.1);
+            font-weight: bold;
+        }
+    }
+}
+.layout-main-section {
+    .widget.shortcut-widget-box{
+            /* Basic border for structure */
+            border: 1px solid #757373; /* Light grey border */
+            border-radius: 14px; /* Rounded corners for a softer look */
+            padding: 8px;
+            height: 120px;
+            /* Transition for smooth hover effect */
+            transition: all 0.3s ease;
+
+            /* Hover effect */
+            &:hover {
+             background: linear-gradient(to right, #1B5CAF, #337BD6);
+                /* Change border color on hover */
+              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow on hover for depth */
+              transform: translateY(-2px); /* Slightly lift the widget up for a lift effect */
+              .indicator-pill {
+                color: white;
+              }
+              .widget-title {
+                color: white !important;
+              }
+    }
+    }
+    .widget.ce-block_content, 
+    .widget .ce-block_content {
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        transform: none;
+        transition: none;
+    }
+    .widget.links-widget-box {
+        padding: 10px;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        transform: none;
+        transition: none;
+        background-color: white;
+      }
+      .widget.shortcut-widget-box .indicator-pill {
+        font-weight: 780;
+        height: 80px;
+        background: none;
+        font-size: 20px;
+      }
+      .widget .widget-head {
+        display: inline;
+      }
+    //   .widget .widget-head .widget-control > * {
+    //     height: 30px;
+    //     width: 20px;
+    //   }
+    .widget.links-widget-box .widget-head .widget-label .widget-title {
+        font-weight: 880;
+      }
+      .btn:not(.btn-md):not(.btn-lg), div#driver-popover-item .driver-popover-footer button:not(.btn-md):not(.btn-lg) {
+       width: 100px;
+       height: 36px;
+       
+       &:hover { 
+        background: linear-gradient(to right, #1B5CAF, #337BD6);
+        color: white !important;
+                   
+       }
+      }
+      
+}

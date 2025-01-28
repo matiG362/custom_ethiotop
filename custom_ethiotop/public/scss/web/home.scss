@@ -1,0 +1,82 @@
+// .my-account-header{
+//     color: blue;
+// }
+#page-me {
+    //   background-color: #b2c7df !important;
+      background-image: url("/assets/custom_ethiotop/image/home-bg.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      height: 100%;
+    }
+
+.web-footer {
+        
+        display: none;
+}
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.my-account-container {
+    // border: 1px solid;
+    padding: 25px;
+    background-color: white;
+    height: 500px;
+    border-radius: 25px;
+    background: linear-gradient(to top, white, rgba(255, 255, 255, 0.2));
+    display: flex;
+    flex-direction: column;
+    flex-basis: 450px;
+    
+    /* Ensure the gradient covers the whole element */
+    background-size: 100% 100%;
+    
+    /* Optional: If you want to keep the white color at the bottom edge */
+    background-position: bottom;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    .my-account-header{
+       margin-top: 30px;
+       margin-bottom: 35px;
+       justify-content: center;
+       align-items: center;
+       display: flex;
+    }
+}
+.account-info {
+    background-color: transparent;
+    border: none;
+    padding: var(--padding-sm) 25px;
+}
+.account-info .col {
+    // flex-grow: 0;
+    // flex-shrink: 0;
+    // flex-basis: 450px;
+    background-color: #F8F8F9;
+    border: none;
+    padding: var(--padding-md) 0;
+    justify-content: start !important;
+    border-bottom: 1px solid var(--border-color);
+    align-items: start !important;
+    // border: 1px solid;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+
+    /* Transition for smooth hover effect */
+    transition: all 0.3s ease;
+
+    /* Hover effects */
+    &:hover {
+        background-color: #ECECEC; /* Lighter shade for hover */
+        border-color: #999; /* Darker border on hover */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* More pronounced shadow on hover */
+        transform: translateY(-2px); /* Slight lift effect */
+    }
+
+  }

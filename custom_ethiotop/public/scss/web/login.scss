@@ -1,0 +1,127 @@
+
+.for-login .page-card, .for-forgot .page-card, .for-login-with-email-link .page-card, 
+.for-signup .page-card, .for-email-login .page-card {
+    padding-left: 35px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    padding: 5px 0;
+    background-color: transparent;
+    margin-bottom: 40px;
+}
+.page-card{
+    padding-left: 35px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    padding: 5px 0;
+    background-color: transparent;
+    margin-bottom: 40px;
+
+}
+
+@media (max-width: 991.98px) {
+    .navbar-expand-lg > .container, .navbar-expand-lg > .container-fluid, .navbar-expand-lg > .container-sm, .navbar-expand-lg > .container-md, .navbar-expand-lg > .container-lg, .navbar-expand-lg > .container-xl {
+        padding-right: 0;
+        padding-left: 0;
+        display: none;
+    }
+}
+
+.navbar-light {
+    border-bottom: 1px solid #e2e2e2;
+    background: #4b659b !important;
+    display: none;
+}
+
+
+
+.for-login .page-card .page-card-body .forgot-password-message > *, .for-forgot .page-card .page-card-body .forgot-password-message > *, .for-login-with-email-link .page-card .page-card-body .forgot-password-message > *, .for-signup .page-card .page-card-body .forgot-password-message > *, .for-email-login .page-card .page-card-body .forgot-password-message > * {
+    color: #fbfbfb !important;
+    font-size: var(--text-sm);
+    font-weight: var(--weight-regular);
+    letter-spacing: 0.02em;
+}
+
+body .page-content-wrapper {
+    min-height: calc(100vh - 220px);
+    background-color: transparent;
+}
+
+@media (min-width: 250px) {
+    body {
+        background-color: #b2c7df !important;
+        background-image: url('/assets/custom_ethiotop/image/login-bg.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    
+    }
+}
+.btn:not(.btn-md):not(.btn-lg) {
+    padding: 8px 8px;
+    border-radius: 20px;
+}
+.btn.btn-primary {
+    background-color: #0F4D9C;
+    color: var(--neutral);
+    white-space: nowrap;
+    --icon-stroke: currentColor;
+    --icon-fill-bg: var(--btn-primary);
+}
+.page_content {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; 
+    margin-top: 80px;
+
+.login-container{
+    padding: 45px 10px ;
+    background-color: rgba(255, 255, 255, 0.05) ;
+    backdrop-filter: blur(5px) ;
+    width: 380px;
+    height: 480px;
+    border: 1px solid rgba(255, 255, 255, 0.3) ; 
+    border-radius: 30px;
+    .page-card-head h4 {
+        margin-top: 1rem;
+        font-size: var(--text-xl);
+        font-weight: var(--weight-semibold);
+        letter-spacing: 0.01em;
+        color:rgba(255, 230, 255);
+    }
+
+    .page-card{
+        color: #fff;
+        padding-left: 35px;
+        border: none;
+        border-radius: 0;
+        padding: 5px 0;
+        background-color: transparent;
+        margin-bottom: 40px;
+        #login_email, #login_password{
+            padding-left: 35px;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            border-radius: 0;
+            padding: 5px 0;
+            background-color: transparent;
+            margin-bottom: 40px;
+        }
+        .email-field input,
+        .password-field input {
+            color: white !important;
+        }
+        .email-field input:focus ,
+        .password-field input:focus{
+            color: white !important;
+        }
+        // .email-field input::placeholder ,
+        // .password-field input ::placeholder{
+        //     color: white !important; /* Color for placeholder text */
+        // }
+    
+    }
+}
+}

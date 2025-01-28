@@ -4,7 +4,12 @@ app_publisher = "mati G."
 app_description = "Custom some functionality on ethiotop"
 app_email = "gebremedhinmatyas@gmail.com"
 app_license = "mit"
-
+app_include_css="custom-desk.bundle.css"
+web_include_css = "custom-web.bundle.css"
+webform_login = {
+    "about": "custom_ethiotop.www.about",
+    "login": "custom_ethiotop.www.login"
+}
 # Apps
 # ------------------
 

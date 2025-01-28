@@ -1,0 +1,276 @@
+/* ../../../../../tmp/tmp-4120-0EgZbmPCZP9t/custom_ethiotop/custom_ethiotop/public/scss/custom-web.bundle.css */
+#page-me {
+  background-image: url(/assets/custom_ethiotop/image/home-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+}
+.web-footer {
+  display: none;
+}
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.my-account-container {
+  padding: 25px;
+  background-color: white;
+  height: 500px;
+  border-radius: 25px;
+  background: linear-gradient(to top, white, rgba(255, 255, 255, 0.2));
+  display: flex;
+  flex-direction: column;
+  flex-basis: 450px;
+  background-size: 100% 100%;
+  background-position: bottom;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.my-account-container .my-account-header {
+  margin-top: 30px;
+  margin-bottom: 35px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.account-info {
+  background-color: transparent;
+  border: none;
+  padding: var(--padding-sm) 25px;
+}
+.account-info .col {
+  background-color: #F8F8F9;
+  border: none;
+  padding: var(--padding-md) 0;
+  justify-content: start !important;
+  border-bottom: 1px solid var(--border-color);
+  align-items: start !important;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  padding-left: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+.account-info .col:hover {
+  background-color: #ECECEC;
+  border-color: #999;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+.about-content {
+  font-family: "Arial", sans-serif;
+  color: #fff;
+  line-height: 1.6;
+  text-align: left;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-height: 100vh;
+  border-radius: 30px;
+  background-color: transparent;
+}
+.hero {
+  width: 100%;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.hero h1 {
+  color: #1a28f9;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+.hero p {
+  font-size: 1.4rem;
+  margin-top: 0;
+}
+.section h2 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.section .row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+}
+.section .col-md-2 h5 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ffcc00;
+}
+.section .col-md-8 p {
+  font-size: 1.1rem;
+}
+.section .row .col-md-2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.section .row img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border: 3px solid #ffcc00;
+}
+.section .row h5 {
+  font-size: 1.2rem;
+  color: #ffcc00;
+}
+.section .row p {
+  font-size: 1rem;
+  color: #ddd;
+}
+.footer-logo-extension .input-group {
+  justify-content: flex-end;
+}
+.input-group {
+  display: none;
+}
+.section-padding-bottom {
+  margin-top: 40px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.about-content > *:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+.for-login .page-card,
+.for-forgot .page-card,
+.for-login-with-email-link .page-card,
+.for-signup .page-card,
+.for-email-login .page-card {
+  padding-left: 35px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+  padding: 5px 0;
+  background-color: transparent;
+  margin-bottom: 40px;
+}
+.page-card {
+  padding-left: 35px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+  padding: 5px 0;
+  background-color: transparent;
+  margin-bottom: 40px;
+}
+@media (max-width: 991.98px) {
+  .navbar-expand-lg > .container,
+  .navbar-expand-lg > .container-fluid,
+  .navbar-expand-lg > .container-sm,
+  .navbar-expand-lg > .container-md,
+  .navbar-expand-lg > .container-lg,
+  .navbar-expand-lg > .container-xl {
+    padding-right: 0;
+    padding-left: 0;
+    display: none;
+  }
+}
+.navbar-light {
+  border-bottom: 1px solid #e2e2e2;
+  background: #4b659b !important;
+  display: none;
+}
+.for-login .page-card .page-card-body .forgot-password-message > *,
+.for-forgot .page-card .page-card-body .forgot-password-message > *,
+.for-login-with-email-link .page-card .page-card-body .forgot-password-message > *,
+.for-signup .page-card .page-card-body .forgot-password-message > *,
+.for-email-login .page-card .page-card-body .forgot-password-message > * {
+  color: #fbfbfb !important;
+  font-size: var(--text-sm);
+  font-weight: var(--weight-regular);
+  letter-spacing: 0.02em;
+}
+body .page-content-wrapper {
+  min-height: calc(100vh - 220px);
+  background-color: transparent;
+}
+@media (min-width: 250px) {
+  body {
+    background-color: #b2c7df !important;
+    background-image: url(/assets/custom_ethiotop/image/login-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}
+.btn:not(.btn-md):not(.btn-lg) {
+  padding: 8px 8px;
+  border-radius: 20px;
+}
+.btn.btn-primary {
+  background-color: #0F4D9C;
+  color: var(--neutral);
+  white-space: nowrap;
+  --icon-stroke: currentColor;
+  --icon-fill-bg: var(--btn-primary);
+}
+.page_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+.page_content .login-container {
+  padding: 45px 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  width: 380px;
+  height: 480px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+}
+.page_content .login-container .page-card-head h4 {
+  margin-top: 1rem;
+  font-size: var(--text-xl);
+  font-weight: var(--weight-semibold);
+  letter-spacing: 0.01em;
+  color: rgb(255, 230, 255);
+}
+.page_content .login-container .page-card {
+  color: #fff;
+  padding-left: 35px;
+  border: none;
+  border-radius: 0;
+  padding: 5px 0;
+  background-color: transparent;
+  margin-bottom: 40px;
+}
+.page_content .login-container .page-card #login_email,
+.page_content .login-container .page-card #login_password {
+  padding-left: 35px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+  padding: 5px 0;
+  background-color: transparent;
+  margin-bottom: 40px;
+}
+.page_content .login-container .page-card .email-field input,
+.page_content .login-container .page-card .password-field input {
+  color: white !important;
+}
+.page_content .login-container .page-card .email-field input:focus,
+.page_content .login-container .page-card .password-field input:focus {
+  color: white !important;
+}
+/*# sourceMappingURL=custom-web.bundle.CETNG6P7.css.map */

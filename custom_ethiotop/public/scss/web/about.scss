@@ -1,0 +1,123 @@
+
+/* General Styling */
+.about-content {
+    font-family: "Arial", sans-serif;
+    color: #fff; /* Ensuring text is readable on the gradient background */
+    line-height: 1.6;
+    text-align: left;
+    // background: linear-gradient(to right, #004d99, #0099cc);
+    padding: 50px 20px; /* Added padding for proper spacing */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-height: 100vh; /* Ensure content starts from the top */
+    border-radius: 30px;
+    background-color: transparent;
+}
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    color: white;
+    padding: 20px; /* Reduced padding to remove extra spacing */
+    border-radius: 8px;
+    box-sizing: border-box;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+/* Hero Title */
+.hero h1 {
+    color: #1a28f9;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    margin-top: 0; /* Ensure it starts at the top */
+}
+
+/* Hero Paragraph */
+.hero p {
+    font-size: 1.4rem;
+    margin-top: 0;
+}
+
+/* Section Headings */
+.section h2 {
+    color: #fff; /* Changed to white for contrast */
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Company History */
+.section .row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align content to the left */
+    margin-bottom: 15px;
+}
+
+.section .col-md-2 h5 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #ffcc00; /* Added better contrast */
+}
+
+/* Text in History */
+.section .col-md-8 p {
+    font-size: 1.1rem;
+}
+
+/* Team Members */
+.section .row .col-md-2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section .row img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #ffcc00; /* Added better contrast */
+}
+
+/* Team Member Names */
+.section .row h5 {
+    font-size: 1.2rem;
+    color: #ffcc00; /* Adjusted for better visibility */
+}
+
+/* Team Member Bio */
+.section .row p {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+/* Footer */
+.footer-logo-extension .input-group {
+    justify-content: flex-end;
+  }
+  .input-group{
+    display: none;
+  }
+.section-padding-bottom {
+    margin-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+
+}
+.about-content > *:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+// .web-footer {
+//     border-top: none;
+//     background-color: transparent;
+//     padding: 3rem 0;
+//     min-height: 140px;
+//     margin-top: auto;
+//   }
