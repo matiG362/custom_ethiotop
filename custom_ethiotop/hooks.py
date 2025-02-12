@@ -6,10 +6,14 @@ app_email = "gebremedhinmatyas@gmail.com"
 app_license = "mit"
 app_include_css="custom-desk.bundle.css"
 web_include_css = "custom-web.bundle.css"
+app_include_js="custom-desk.bundle.js"
+web_include_js = "custom-web.bundle.js"
 webform_login = {
     "about": "custom_ethiotop.www.about",
-    "login": "custom_ethiotop.www.login"
+    "login": "custom_ethiotop.www.login",
+    "contact": "custom_ethiotop.www.contact"
 }
+
 # Apps
 # ------------------
 
@@ -247,3 +251,6 @@ webform_login = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+# override_get_context ={
+#     "apps " : "custom_ethiotop.custom_context.override_get_context"
+# }

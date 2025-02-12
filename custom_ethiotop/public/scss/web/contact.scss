@@ -1,0 +1,55 @@
+
+  .contact-content {
+    background-image: none;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 80px;
+  }
+  // main.my-4{
+  //   background-color: white;
+  //   background-image: url('/assets/custom_ethiotop/image/mask-group.png');
+  //   background-size: 100% 100%; /* This will stretch the image to fit both width and height of the container */
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  //   background-attachment: fixed;
+  // }
+
+  .both-holder{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .row{
+    // margin-right: 455px;
+    .form-group{
+      width: 400px;
+      .form-control{
+        height: 50px;
+      }
+      .btn{
+        padding: 8px 8px;
+        border-radius: 10px;
+        width: 150px;
+        &:hover{
+          background: linear-gradient(to right, #1B5CAF, #337BD6);
+                /* Change border color on hover */
+              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow on hover for depth */
+              transform: translateY(-2px); 
+        }
+      }
+    }
+  }
+  textarea.form-control {
+    height: 120px !important;
+  }
+  .location {
+    width: 400px;
+}
+@media (max-width: 768px) {
+  .location {
+      background-size: cover; /* or adjust based on your needs */
+  }
+}

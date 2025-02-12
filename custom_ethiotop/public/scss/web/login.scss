@@ -49,14 +49,14 @@ body .page-content-wrapper {
 }
 
 @media (min-width: 250px) {
-    body {
-        background-color: #b2c7df !important;
+    #page-login {
+        // background-color: #b2c7df !important;
         background-image: url('/assets/custom_ethiotop/image/login-bg.png');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
-    
+        height: 100%;
     }
 }
 .btn:not(.btn-md):not(.btn-lg) {
