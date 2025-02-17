@@ -6,17 +6,9 @@
     // line-height: 1.6;
     text-align: left;
     // background: linear-gradient(to right, #004d99, #0099cc);
-    padding: 70px 20px; /* Added padding for proper spacing */
-    // display: flex;
-    // flex-direction: column;
-    // align-items: flex-start;
-    // justify-content: flex-start;
-    // min-height: 100vh; /* Ensure content starts from the top */
-    // border-radius: 30px;
-    // background-color: transparent;
+    padding: 50px 20px; /* Added padding for proper spacing */
+   
 }
-
-
 /* Hero Section */
 .hero {
     // width: 100%;
@@ -77,8 +69,6 @@
     margin-right: 100px; /* Larger right margin */
 }
 
-
-
 /* Footer */
 .footer-logo-extension .input-group {
     justify-content: flex-end;
@@ -100,7 +90,7 @@
 .about-content-wrapper .row {
         margin-right: 15px;
         margin-left: 15px;
-        margin-bottom: -70px;
+        // margin-bottom: -70px;
 }
 
 
@@ -114,16 +104,67 @@
     overflow: hidden; /* Ensures content does not overflow */
     border-radius: 20px;
 }
-
-// .image-placeholder::before {
-//     // content: "Image Placeholder";
-//     color: #666;
-//     font-size: 16px;
-//     text-align: center;
-// }
-
 .about-us-image {
     width: 100%; /* Ensures image fills the container if present */
     height: 100%;
     object-fit: cover; /* Keeps aspect ratio while covering the area */
+}
+
+
+
+@media (max-width: 1024px) {
+    .new-div-1, .new-div-2, .new-div-3 {
+        max-width: calc(50% - 10px); /* Two per row on medium screens */
+    }
+    .new-div-1 {
+        margin-left: 0; /* Resetting large margins for medium screens */
+    }
+    .new-div-3 {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .new-div-1, .new-div-2, .new-div-3 {
+        max-width: 100%; /* Full width on small screens */
+        margin: 10px 0; /* Add vertical margin for stacked layout */
+    }
+    .div-container {
+        justify-content: center; /* Center items when they stack */
+    }
+}
+
+@media (max-width: 768px) {
+    .image-placeholder, .about-us-image {
+        height: 250px; /* Reduce height on smaller screens */
+    }
+}
+
+@media (min-width: 1200px) {
+    h2 {
+        font-size: 2.5rem;
+        margin-top: 0; 
+    }
+}
+@media (min-width: 576px) {
+    h2 {
+        font-size: 2rem;
+        margin-top: 0;
+        margin-bottom: 0.75rem;
+    }
+}
+.hero-content {
+    margin-top: 0; 
+    margin-bottom: 3rem;
+}
+@media (max-width: 768px) {
+    .div-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: stretch; /* Ensure each div takes full width */
+    }
+    
+    .new-div-1, .new-div-2, .new-div-3 {
+        width: 100%; /* Full width on mobile */
+        margin: 10px 0; /* Add vertical margin for spacing */
+    }
 }

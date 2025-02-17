@@ -1,4 +1,4 @@
-/* ../../../../../tmp/tmp-18756-InOvT8BTl54s/custom_ethiotop/custom_ethiotop/public/scss/custom-web.bundle.css */
+/* ../../../../../tmp/tmp-214149-04YUSr3qWTOq/custom_ethiotop/custom_ethiotop/public/scss/custom-web.bundle.css */
 #page-me {
   background-image: url(/assets/custom_ethiotop/image/home-bg.png);
   background-size: cover;
@@ -50,7 +50,7 @@
   align-items: start !important;
   border-radius: 20px;
   margin-bottom: 30px;
-  padding-right: 10px;
+  padding-left: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
 }
@@ -62,12 +62,12 @@
 }
 .about-content {
   font-family: "Arial", sans-serif;
-  text-align: right;
-  padding: 70px 20px;
+  text-align: left;
+  padding: 50px 20px;
 }
 .hero {
   padding: 20px;
-  text-align: right;
+  text-align: left;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -89,11 +89,11 @@
 .container-lg,
 .container-md,
 .container-sm {
-  padding-left: 0px;
   padding-right: 0px;
+  padding-left: 0px;
 }
 .about-footer-color {
-  background: linear-gradient(to left, #1B5CAF, #337BD6);
+  background: linear-gradient(to right, #1B5CAF, #337BD6);
   width: 100%;
   padding-bottom: 60px;
 }
@@ -118,10 +118,10 @@
   font-weight: 600;
 }
 .new-div-1 {
-  margin-right: 100px;
+  margin-left: 100px;
 }
 .new-div-3 {
-  margin-left: 100px;
+  margin-right: 100px;
 }
 .footer-logo-extension .input-group {
   justify-content: flex-end;
@@ -137,9 +137,8 @@
   padding-top: 0;
 }
 .about-content-wrapper .row {
-  margin-left: 15px;
   margin-right: 15px;
-  margin-bottom: -70px;
+  margin-left: 15px;
 }
 .image-placeholder {
   width: 100%;
@@ -157,12 +156,71 @@
   -o-object-fit: cover;
   object-fit: cover;
 }
+@media (max-width: 1024px) {
+  .new-div-1,
+  .new-div-2,
+  .new-div-3 {
+    max-width: calc(50% - 10px);
+  }
+  .new-div-1 {
+    margin-left: 0;
+  }
+  .new-div-3 {
+    margin-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .new-div-1,
+  .new-div-2,
+  .new-div-3 {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+  .div-container {
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .image-placeholder,
+  .about-us-image {
+    height: 250px;
+  }
+}
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 2.5rem;
+    margin-top: 0;
+  }
+}
+@media (min-width: 576px) {
+  h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+  }
+}
+.hero-content {
+  margin-top: 0;
+  margin-bottom: 3rem;
+}
+@media (max-width: 768px) {
+  .div-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .new-div-1,
+  .new-div-2,
+  .new-div-3 {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
 .for-login .page-card,
 .for-forgot .page-card,
 .for-login-with-email-link .page-card,
 .for-signup .page-card,
 .for-email-login .page-card {
-  padding-right: 35px;
+  padding-left: 35px;
   border: none;
   border-bottom: 1px solid #ccc;
   border-radius: 0;
@@ -171,7 +229,7 @@
   margin-bottom: 40px;
 }
 .page-card {
-  padding-right: 35px;
+  padding-left: 35px;
   border: none;
   border-bottom: 1px solid #ccc;
   border-radius: 0;
@@ -186,8 +244,8 @@
   .navbar-expand-lg > .container-md,
   .navbar-expand-lg > .container-lg,
   .navbar-expand-lg > .container-xl {
-    padding-left: 0;
     padding-right: 0;
+    padding-left: 0;
     display: none;
   }
 }
@@ -257,7 +315,7 @@ body .page-content-wrapper {
 }
 .page_content .login-container .page-card {
   color: #fff;
-  padding-right: 35px;
+  padding-left: 35px;
   border: none;
   border-radius: 0;
   padding: 5px 0;
@@ -266,7 +324,7 @@ body .page-content-wrapper {
 }
 .page_content .login-container .page-card #login_email,
 .page_content .login-container .page-card #login_password {
-  padding-right: 35px;
+  padding-left: 35px;
   border: none;
   border-bottom: 1px solid #ccc;
   border-radius: 0;
@@ -310,7 +368,7 @@ body .page-content-wrapper {
   background-color: white;
   width: 100%;
   display: flex;
-  justify-content: right;
+  justify-content: left;
   align-items: center;
   margin-top: 80px;
 }
@@ -331,7 +389,7 @@ body .page-content-wrapper {
   width: 150px;
 }
 .row .form-group .btn:hover {
-  background: linear-gradient(to left, #1B5CAF, #337BD6);
+  background: linear-gradient(to right, #1B5CAF, #337BD6);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transform: translateY(-2px);
 }
@@ -346,4 +404,4 @@ textarea.form-control {
     background-size: cover;
   }
 }
-/*# sourceMappingURL=custom-web.bundle.2WCZDS2B.css.map */
+/*# sourceMappingURL=custom-web.bundle.QPTLZVSK.css.map */
