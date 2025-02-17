@@ -1,68 +1,84 @@
 {% extends "templates/web.html" %}
 
-{% set default_intro = """<p>About Us
+{% set default_intro = """<p><strong>About Us</strong><br>
 
 	Ethiotop Paint Manufacturing Company is a leading provider of high-quality paints and coatings, committed to enhancing durability, aesthetics, and protection across various surfaces. With a focus on innovation and excellence, we manufacture a wide range of paints designed for residential, commercial, and industrial applications.
 	
-	At Ethiotop, we prioritize quality, sustainability, and customer satisfaction. Our products are formulated using advanced technology to ensure long-lasting performance and vibrant colors that meet the evolving needs of our clients. We strive to contribute to the construction and industrial sectors by delivering reliable and eco-friendly paint solutions.
-	
-	As a proudly Ethiopian company, we are dedicated to supporting local industries and promoting growth through high-standard manufacturing practices. Whether for home improvement, large-scale projects, or specialized coatings, Ethiotop Paint Manufacturing Company stands as a trusted partner in delivering premium paint solutions.
-	Innovation is at the core of our operations. We continuously invest in research and development to formulate eco-friendly, non-toxic, and weather-resistant paints that not only meet industry standards but also contribute to a greener future. Ethiotop is dedicated to reducing environmental impact by adopting sustainable production processes, minimizing waste, and offering low-VOC (volatile organic compound) paint options.
-	As a proudly Ethiopian company, we are deeply committed to supporting local industries and fostering national growth. By sourcing quality raw materials, investing in skilled labor, and maintaining high manufacturing standards, we aim to strengthen Ethiopia’s position in the global paint and coatings industry.
-
-From homes and offices to large infrastructure projects, Ethiotop Paint Manufacturing Company stands as a trusted partner for delivering exceptional, durable, and environmentally responsible paint solutions. We believe that every color tells a story, and through our products, we help bring visions to life—one brushstroke at a time.
-
 </p>""" %}
-
 {% set title = doc.page_title or _("About Us") %}
 {% block page_content %}
-
-<article class="about-content">
-	{{ web_block(
-		'Hero',
-		values={
-			"title": doc.page_title or _("About Us"),
-			"subtitle": doc.company_introduction or default_intro
-		},
-		add_container=0,
-		add_top_padding=1,
-		add_bottom_padding=1,
-	) }}
-
-
-	{% if doc.get({"doctype":"Company History"}) %}
-	<section class="section section-padding-bottom">
-		<h2>{{ doc.company_history_heading or _("Company History") }}</h2>
-		{% for d in doc.get({"doctype":"Company History"}) %}
-		<div class="row">
-			<span class="col-md-2">
-				<h5>{{ d.year }}</h5>
-			</span>
-			<span class="col-md-8">
-				<p>{{ d.highlight }}</p>
-			</span>
-		</div>
-		{% endfor %}
-	</section>
-	{% endif %}
-
-	{% if doc.get({"doctype":"About Us Team Member"}) %}
-	<section class="section section-padding-bottom">
-		<h2>{{ doc.team_members_heading or _("Team Members") }}</h2>
-		<p>{{ doc.team_members_subtitle }}</p>
-		<div class="row">
-			{% for d in doc.get({"doctype":"About Us Team Member"}) %}
-			<div class="col-md-2 mt-4" itemscope itemtype="http://schema.org/Person">
-				<img class="card card-md w-100" src="{{ d.image_link }}" itemprop="image">
-				<h5 class="mt-3" itemprop="name">{{ d.full_name }}</h5>
-				<p class="small mt-2" itemprop="description">{{ d.bio }}</p>
+<div class="about-content-wrapper">
+    <div class="row">
+        <div class="image col-md-6">
+			<h2>About Us</h2>
+			<div class="image-placeholder">
+				<img src="/assets/custom_ethiotop/image/home-bg.png" alt="About Us Image" class="about-us-image">
 			</div>
-			{% endfor %}
 		</div>
-	</section>
-	{% endif %}
-	<section class="section section-padding-bottom">
-		<!-- {{ doc.footer or "" }} -->
-	</section>
-</article>
+        <article class="about-content col-md-6">
+            {{ web_block(
+                'Hero',
+                values={
+                    "title": doc.page_title or _(" "),
+                    "subtitle": doc.company_introduction or default_intro
+                },
+                add_container=0,
+                add_top_padding=1,
+                add_bottom_padding=1,
+            ) }}
+
+            {% if doc.get({"doctype":"Company History"}) %}
+            <section class="section section-padding-bottom">
+                <h2>{{ doc.company_history_heading or _("Company History") }}</h2>
+                {% for d in doc.get({"doctype":"Company History"}) %}
+                <div class="row">
+                    <span class="col-md-2">
+                        <h5>{{ d.year }}</h5>
+                    </span>
+                    <span class="col-md-8">
+                        <p>{{ d.highlight }}</p>
+                    </span>
+                </div>
+                {% endfor %}
+            </section>
+            {% endif %}
+
+            {% if doc.get({"doctype":"About Us Team Member"}) %}
+            <section class="section section-padding-bottom">
+                <h2>{{ doc.team_members_heading or _("Team Members") }}</h2>
+                <p>{{ doc.team_members_subtitle }}</p>
+                <div class="row">
+                    {% for d in doc.get({"doctype":"About Us Team Member"}) %}
+                    <div class="col-md-2 mt-4" itemscope itemtype="http://schema.org/Person">
+                        <img class="card card-md w-100" src="{{ d.image_link }}" itemprop="image">
+                        <h5 class="mt-3" itemprop="name">{{ d.full_name }}</h5>
+                        <p class="small mt-2" itemprop="description">{{ d.bio }}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+            {% endif %}
+            <section class="section section-padding-bottom">
+                <!-- {{ doc.footer or "" }} -->
+            </section>
+        </article>
+	
+    </div>
+	<div class="about-footer-color">
+	<div class="div-container">
+		<div class="new-div-1 col-md-2">
+			<h4>Our Commitment</h4>
+			<p>At Ethiotop, we prioritize quality, sustainability, and customer satisfaction. Our products are formulated using advanced technology to ensure long-lasting performance and vibrant colors that meet the evolving needs of our clients. We strive to contribute to the construction and industrial sectors by delivering reliable and eco-friendly paint solutions.</p>
+		</div>
+		<div class="new-div-2 col-md-2">
+			<h4>Local Pride and Growth</h4>
+			<p>As a proudly Ethiopian company, we are dedicated to supporting local industries and promoting growth through high-standard manufacturing practices. Whether for home improvement, large-scale projects, or specialized coatings, Ethiotop Paint Manufacturing Company stands as a trusted partner in delivering premium paint solutions.</p>
+		</div>
+		<div class="new-div-3 col-md-2">
+			<h4>Innovation and Sustainability</h4>
+			<p>Innovation is at the core of our operations. We continuously invest in research and development to formulate eco-friendly, non-toxic, and weather-resistant paints that not only meet industry standards but also contribute to a greener future. Ethiotop is dedicated to reducing environmental impact by adopting sustainable production processes, minimizing waste, and offering low-VOC (volatile organic compound) paint options.</p>
+		</div>
+	</div>
+</div>
+</div>
 {% endblock %}

@@ -29,8 +29,8 @@
 }
 
 .navbar-light {
-    border-bottom: 1px solid #e2e2e2;
-    background: #4b659b !important;
+    // border-bottom: 1px solid #e2e2e2;
+    background-color:transparent;
     display: none;
 }
 
@@ -74,7 +74,11 @@ body .page-content-wrapper {
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; 
+    // margin-top: 80px;
+
+.login-margin{
     margin-top: 80px;
+}
 
 .login-container{
     padding: 45px 10px ;
@@ -116,11 +120,33 @@ body .page-content-wrapper {
         .email-field input:focus ,
         .password-field input:focus{
             color: white !important;
+            background-color: transparent;
         }
-        // .email-field input::placeholder ,
-        // .password-field input ::placeholder{
-        //     color: white !important; /* Color for placeholder text */
-        // }
+        .email-field input:hover ,
+        .password-field input:hover{
+            background-color: transparent !important;
+        }
+
+        /* Additional rules to handle autofill */
+.email-field input:-webkit-autofill,
+.email-field input:-webkit-autofill:hover, 
+.email-field input:-webkit-autofill:focus,
+.email-field input:-webkit-autofill:active,
+.password-field input:-webkit-autofill,
+.password-field input:-webkit-autofill:hover, 
+.password-field input:-webkit-autofill:focus,
+.password-field input:-webkit-autofill:active {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: white; /* Matches your existing text color */
+    transition: background-color 5000s ease-in-out 0s;
+    box-shadow: inset 0 0 0 1000px transparent;
+}
+
+/* Ensure placeholder visibility if needed */
+.email-field input:-webkit-autofill::placeholder,
+.password-field input:-webkit-autofill::placeholder {
+    color: #cccccc; /* Adjust as needed */
+}
     
     }
 }

@@ -1,4 +1,4 @@
-/* ../../../../../tmp/tmp-86959-a2u7VXOMX2Sf/custom_ethiotop/custom_ethiotop/public/scss/custom-web.bundle.css */
+/* ../../../../../tmp/tmp-18756-TvNLjsfeIgBA/custom_ethiotop/custom_ethiotop/public/scss/custom-web.bundle.css */
 #page-me {
   background-image: url(/assets/custom_ethiotop/image/home-bg.png);
   background-size: cover;
@@ -16,6 +16,7 @@
   justify-content: center;
 }
 .my-account-container {
+  margin-top: 5%;
   padding: 25px;
   background-color: white;
   height: 500px;
@@ -61,79 +62,66 @@
 }
 .about-content {
   font-family: "Arial", sans-serif;
-  color: #fff;
-  line-height: 1.6;
   text-align: left;
-  padding: 50px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  min-height: 100vh;
-  border-radius: 30px;
-  background-color: transparent;
+  padding: 70px 20px;
 }
 .hero {
-  width: 100%;
-  color: white;
   padding: 20px;
-  border-radius: 8px;
-  box-sizing: border-box;
   text-align: left;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-}
-.hero h1 {
-  color: #1a28f9;
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-  margin-top: 0;
 }
 .hero p {
   font-size: 1.4rem;
   margin-top: 0;
+  font-weight: 600;
 }
-.section h2 {
-  color: #fff;
-  font-size: 2rem;
-  margin-bottom: 20px;
-  text-align: left;
-}
-.section .row {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin-bottom: 15px;
-}
-.section .col-md-2 h5 {
+.hero p strong {
   font-size: 1.4rem;
-  font-weight: bold;
-  color: #ffcc00;
+  margin-top: 0;
+  font-weight: 900;
 }
-.section .col-md-8 p {
-  font-size: 1.1rem;
+.container,
+.container-fluid,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  padding-right: 0px;
+  padding-left: 0px;
 }
-.section .row .col-md-2 {
+.about-footer-color {
+  background: linear-gradient(to right, #1B5CAF, #337BD6);
+  width: 100%;
+  padding-bottom: 60px;
+}
+.div-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+.new-div-1,
+.new-div-2,
+.new-div-3 {
+  flex: 1;
+  margin: 0 5px;
+  border: 2px solid #f1eeee;
+  border-radius: 20px;
+  background-color: white;
+  min-height: 330px;
   text-align: center;
-  margin-bottom: 20px;
+  padding: 10px;
+  max-width: calc(20.33% + 103px);
+  margin-top: 50px;
+  font-weight: 600;
 }
-.section .row img {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  -o-object-fit: cover;
-  object-fit: cover;
-  border: 3px solid #ffcc00;
+.new-div-1 {
+  margin-left: 100px;
 }
-.section .row h5 {
-  font-size: 1.2rem;
-  color: #ffcc00;
-}
-.section .row p {
-  font-size: 1rem;
-  color: #ddd;
+.new-div-3 {
+  margin-right: 100px;
 }
 .footer-logo-extension .input-group {
   justify-content: flex-end;
@@ -142,13 +130,32 @@
   display: none;
 }
 .section-padding-bottom {
-  margin-top: 40px;
-  padding-bottom: 20px;
-  text-align: center;
+  padding-bottom: 0px;
 }
 .about-content > *:first-child {
   margin-top: 0;
   padding-top: 0;
+}
+.about-content-wrapper .row {
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: -70px;
+}
+.image-placeholder {
+  width: 100%;
+  height: 350px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.about-us-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 .for-login .page-card,
 .for-forgot .page-card,
@@ -185,8 +192,7 @@
   }
 }
 .navbar-light {
-  border-bottom: 1px solid #e2e2e2;
-  background: #4b659b !important;
+  background-color: transparent;
   display: none;
 }
 .for-login .page-card .page-card-body .forgot-password-message > *,
@@ -228,6 +234,8 @@ body .page-content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.page_content .login-margin {
   margin-top: 80px;
 }
 .page_content .login-container {
@@ -273,6 +281,29 @@ body .page-content-wrapper {
 .page_content .login-container .page-card .email-field input:focus,
 .page_content .login-container .page-card .password-field input:focus {
   color: white !important;
+  background-color: transparent;
+}
+.page_content .login-container .page-card .email-field input:hover,
+.page_content .login-container .page-card .password-field input:hover {
+  background-color: transparent !important;
+}
+.page_content .login-container .page-card .email-field input:-webkit-autofill,
+.page_content .login-container .page-card .email-field input:-webkit-autofill:hover,
+.page_content .login-container .page-card .email-field input:-webkit-autofill:focus,
+.page_content .login-container .page-card .email-field input:-webkit-autofill:active,
+.page_content .login-container .page-card .password-field input:-webkit-autofill,
+.page_content .login-container .page-card .password-field input:-webkit-autofill:hover,
+.page_content .login-container .page-card .password-field input:-webkit-autofill:focus,
+.page_content .login-container .page-card .password-field input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: white;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+  box-shadow: inset 0 0 0 1000px transparent;
+}
+.page_content .login-container .page-card .email-field input:-webkit-autofill::placeholder,
+.page_content .login-container .page-card .password-field input:-webkit-autofill::placeholder {
+  color: #cccccc;
 }
 .contact-content {
   background-image: none;
@@ -315,4 +346,4 @@ textarea.form-control {
     background-size: cover;
   }
 }
-/*# sourceMappingURL=custom-web.bundle.JM6JJWAP.css.map */
+/*# sourceMappingURL=custom-web.bundle.ZLH3LVG5.css.map */

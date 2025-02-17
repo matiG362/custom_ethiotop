@@ -93,8 +93,8 @@
         font-weight: 880;
       }
       .btn:not(.btn-md):not(.btn-lg), div#driver-popover-item .driver-popover-footer button:not(.btn-md):not(.btn-lg) {
-       width: 100px;
-       height: 36px;
+      //  width: 100px;
+      //  height: 36px;
        
        &:hover { 
         background: linear-gradient(to right, #1B5CAF, #337BD6);

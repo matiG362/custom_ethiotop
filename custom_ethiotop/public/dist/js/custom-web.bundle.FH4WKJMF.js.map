@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../apps/custom_ethiotop/custom_ethiotop/public/js/custom-web.js"],
-  "sourcesContent": ["\n\ndocument.addEventListener('DOMContentLoaded', function() {\n\n    let mainContainer= document.querySelector('main.container');\n    \n    mainContainer.classList.remove('container');\n    mainContainer.classList.add('container-fluid');\n\n    // Assuming there's only one element with this class, or you're only interested in the first one\nvar element = document.querySelector('.text-muted');\n\n// Change the text inside the anchor\nelement.textContent = 'Mehbub General Trading PLC';\n\n// Change the href attribute\nelement.href = 'https://mehbubgtplc.com';\n})"],
-  "mappings": ";;AAEA,WAAS,iBAAiB,oBAAoB,WAAW;AAErD,QAAI,gBAAe,SAAS,cAAc,gBAAgB;AAE1D,kBAAc,UAAU,OAAO,WAAW;AAC1C,kBAAc,UAAU,IAAI,iBAAiB;AAGjD,QAAI,UAAU,SAAS,cAAc,aAAa;AAGlD,YAAQ,cAAc;AAGtB,YAAQ,OAAO;AAAA,EACf,CAAC;",
-  "names": []
-}
