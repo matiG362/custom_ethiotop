@@ -1,4 +1,4 @@
-/* ../../../../../tmp/tmp-9811-4J3RQWaI1hgP/custom_ethiotop/custom_ethiotop/public/scss/custom-desk.bundle.css */
+/* ../../../../../tmp/tmp-141162-NfnWxMWIRRTo/custom_ethiotop/custom_ethiotop/public/scss/custom-desk.bundle.css */
 .sidebar-item-container {
 }
 .sidebar-item-container .desk-sidebar-item {
@@ -20,6 +20,18 @@
 .sidebar-item-container .desk-sidebar-item.selected {
   background-color: rgba(0, 0, 0, 0.1);
   font-weight: bold;
+}
+.widget .widget-head .widget-control {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.widget .widget-head .widget-control .es-icon {
+  margin: 0;
+}
+.ce-block {
+  min-width: 290px;
 }
 .layout-main-section .widget.shortcut-widget-box {
   border: 1px solid #757373;
@@ -73,4 +85,4 @@
   background: linear-gradient(to right, #1B5CAF, #337BD6);
   color: white !important;
 }
-/*# sourceMappingURL=custom-desk.bundle.2XRPDCVQ.css.map */
+/*# sourceMappingURL=custom-desk.bundle.2O4WRUA4.css.map */
