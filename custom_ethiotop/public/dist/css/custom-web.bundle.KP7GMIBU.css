@@ -1,4 +1,6 @@
-/* ../../../../../tmp/tmp-214149-04YUSr3qWTOq/custom_ethiotop/custom_ethiotop/public/scss/custom-web.bundle.css */
+@charset "UTF-8";
+
+/* ../../../../../tmp/tmp-9811-4J3RQWaI1hgP/custom_ethiotop/custom_ethiotop/public/scss/custom-web.bundle.css */
 #page-me {
   background-image: url(/assets/custom_ethiotop/image/home-bg.png);
   background-size: cover;
@@ -363,22 +365,18 @@ body .page-content-wrapper {
 .page_content .login-container .page-card .password-field input:-webkit-autofill::placeholder {
   color: #cccccc;
 }
-.contact-content {
-  background-image: none;
-  background-color: white;
-  width: 100%;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  margin-top: 80px;
-}
 .both-holder {
-  display: flex;
-  justify-content: space-evenly;
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 150px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 .row .form-group {
-  width: 400px;
+  margin-bottom: 2rem;
 }
 .row .form-group .form-control {
   height: 50px;
@@ -396,12 +394,30 @@ body .page-content-wrapper {
 textarea.form-control {
   height: 120px !important;
 }
+.contact-content {
+  flex: 1 1 35%;
+  min-width: 320px;
+}
 .location {
-  width: 400px;
+  flex: 1 1 40%;
+  min-width: 300px;
 }
 @media (max-width: 768px) {
+  .both-holder {
+    flex-direction: column;
+  }
+  .contact-content,
   .location {
-    background-size: cover;
+    flex: 1 1 100%;
+    min-width: 0;
   }
 }
-/*# sourceMappingURL=custom-web.bundle.QPTLZVSK.css.map */
+@media (min-width: 768px) {
+  .contact-content .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+/*# sourceMappingURL=custom-web.bundle.KP7GMIBU.css.map */

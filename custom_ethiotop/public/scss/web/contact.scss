@@ -1,55 +1,167 @@
+// .contact-content {
+//   // background-image: none;
+//   // background-color: white;
+//   // width: 100%;
+//   // display: flex;
+//   // justify-content: left;
+//   // align-items: center;
+//   margin-top: 80px;
+// }
 
-  .contact-content {
-    background-image: none;
-    background-color: white;
-    width: 100%;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    margin-top: 80px;
-  }
-  // main.my-4{
-  //   background-color: white;
-  //   background-image: url('/assets/custom_ethiotop/image/mask-group.png');
-  //   background-size: 100% 100%; /* This will stretch the image to fit both width and height of the container */
-  //   background-position: center;
-  //   background-repeat: no-repeat;
-  //   background-attachment: fixed;
-  // }
+// .both-holder {
+//   height: 600px;
+//   display: flex;
+//   justify-content: space-evenly;
+//   width: 100%;
+// }
 
-  .both-holder{
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-  }
-  .row{
-    // margin-right: 455px;
-    .form-group{
-      width: 400px;
-      .form-control{
-        height: 50px;
-      }
-      .btn{
-        padding: 8px 8px;
-        border-radius: 10px;
-        width: 150px;
-        &:hover{
-          background: linear-gradient(to right, #1B5CAF, #337BD6);
-                /* Change border color on hover */
-              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow on hover for depth */
-              transform: translateY(-2px); 
-        }
+// .row {
+
+//   // margin-right: 455px;
+//   .form-group {
+//     width: 400px;
+
+//     .form-control {
+//       height: 50px;
+//     }
+
+//     .btn {
+//       padding: 8px 8px;
+//       border-radius: 10px;
+//       width: 150px;
+
+//       &:hover {
+//         background: linear-gradient(to right, #1B5CAF, #337BD6);
+//         /* Change border color on hover */
+//         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+//         /* Add a subtle shadow on hover for depth */
+//         transform: translateY(-2px);
+//       }
+//     }
+//   }
+// }
+
+// textarea.form-control {
+//   height: 120px !important;
+// }
+
+// .location {
+//   // width: 100%;
+//   /* or whatever width you want */
+//   height: 100%;
+//   /* Example height, adjust based on your design */
+//   // background-color: #f0f0f0;
+//   /* Light gray as placeholder background */
+//   // display: flex;
+//   // justify-content: center;
+//   // align-items: center;
+//   // overflow: hidden;
+//   /* Ensures content does not overflow */
+//   border-radius: 20px;
+// }
+
+// .Location-Image {
+//   // width: 100%;
+//   /* Ensures image fills the container if present */
+//   height: 100%;
+//   object-fit: cover;
+//   /* Keeps aspect ratio while covering the area */
+// }
+
+//   width: 400px;
+// }
+
+
+
+
+.both-holder {
+  width: 100%;
+  /* Takes full width of its parent */
+  max-width: 1200px;
+  /* Limits width on large screens, adjustable */
+  margin: 0 auto;
+  /* Centers the container */
+  display: flex;
+  /* Flexbox for side-by-side layout */
+  flex-wrap: wrap;
+  /* Wraps children on smaller screens */
+  gap: 150px;
+  /* Space between .contact-content and .location */
+  padding: 20px;
+  /* Optional: adds inner spacing */
+  box-sizing: border-box;
+  /* Ensures padding doesn’t increase width */
+}
+
+.row {
+
+  // margin-right: 455px;
+  .form-group {
+    margin-bottom: 2rem;
+
+    .form-control {
+      height: 50px;
+    }
+
+    .btn {
+      padding: 8px 8px;
+      border-radius: 10px;
+      width: 150px;
+
+      &:hover {
+        background: linear-gradient(to right, #1B5CAF, #337BD6);
+        /* Change border color on hover */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        /* Add a subtle shadow on hover for depth */
+        transform: translateY(-2px);
       }
     }
   }
-  textarea.form-control {
-    height: 120px !important;
-  }
-  .location {
-    width: 400px;
 }
+
+textarea.form-control {
+  height: 120px !important;
+}
+
+/* Style for .contact-content */
+.contact-content {
+  flex: 1 1 35%;
+  /* Reduced from 40% to give more space to .location */
+  min-width: 320px;
+  /* Minimum width before wrapping */
+}
+
+/* Style for .location */
+.location {
+  flex: 1 1 40%;
+  /* Increased from 45% to 60% for a wider image */
+  min-width: 300px;
+  /* Increased to support larger image */
+}
+
+/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
+  .both-holder {
+    flex-direction: column;
+    /* Stacks vertically on small screens */
+  }
+
+  .contact-content,
   .location {
-      background-size: cover; /* or adjust based on your needs */
+    flex: 1 1 100%;
+    /* Full width on smaller screens */
+    min-width: 0;
+    /* Allows full shrinking */
+  }
+}
+
+/* Ensure Bootstrap grid works within flex */
+@media (min-width: 768px) {
+  .contact-content .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    /* Matches Bootstrap’s gutter */
+    margin-right: -15px;
   }
 }
