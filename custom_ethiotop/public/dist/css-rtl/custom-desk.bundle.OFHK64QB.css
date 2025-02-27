@@ -21,6 +21,18 @@
   background-color: rgba(0, 0, 0, 0.1);
   font-weight: bold;
 }
+.widget .widget-head .widget-control {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.widget .widget-head .widget-control .es-icon {
+  margin: 0;
+}
+.ce-block {
+  min-width: 290px;
+}
 .layout-main-section .widget.shortcut-widget-box {
   border: 1px solid #757373;
   border-radius: 14px;
@@ -73,4 +85,4 @@
   background: linear-gradient(to left, #1B5CAF, #337BD6);
   color: white !important;
 }
-/*# sourceMappingURL=custom-desk.bundle.QPTQBUC6.css.map */
+/*# sourceMappingURL=custom-desk.bundle.OFHK64QB.css.map */
