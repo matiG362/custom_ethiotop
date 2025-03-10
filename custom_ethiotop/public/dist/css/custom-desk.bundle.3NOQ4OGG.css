@@ -1,4 +1,4 @@
-/* ../../../../../tmp/tmp-141162-dbISyWg4v8Uo/custom_ethiotop/custom_ethiotop/public/scss/custom-desk.bundle.css */
+/* ../../../../../tmp/tmp-19435-IDgKCRh3oGQn/custom_ethiotop/custom_ethiotop/public/scss/custom-desk.bundle.css */
 .sidebar-item-container {
 }
 .sidebar-item-container .desk-sidebar-item {
@@ -41,7 +41,7 @@
   transition: all 0.3s ease;
 }
 .layout-main-section .widget.shortcut-widget-box:hover {
-  background: linear-gradient(to left, #1B5CAF, #337BD6);
+  background: linear-gradient(to right, #1B5CAF, #337BD6);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transform: translateY(-2px);
 }
@@ -82,7 +82,7 @@
 }
 .layout-main-section .btn:not(.btn-md):not(.btn-lg):hover,
 .layout-main-section div#driver-popover-item .driver-popover-footer button:not(.btn-md):not(.btn-lg):hover {
-  background: linear-gradient(to left, #1B5CAF, #337BD6);
+  background: linear-gradient(to right, #1B5CAF, #337BD6);
   color: white !important;
 }
-/*# sourceMappingURL=custom-desk.bundle.OFHK64QB.css.map */
+/*# sourceMappingURL=custom-desk.bundle.3NOQ4OGG.css.map */

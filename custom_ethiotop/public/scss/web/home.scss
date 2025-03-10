@@ -3,19 +3,20 @@
 // }
 #page-me {
     //   background-color: #b2c7df !important;
-      background-image: url("/assets/custom_ethiotop/image/home-bg.png");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      height: 100%;
-    }
+    background-image: url("/assets/custom_ethiotop/image/home-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+}
 
 .web-footer {
-        
-        display: none;
-        border-top: none !important;
+
+    display: none;
+    border-top: none !important;
 }
+
 .image-wrapper {
     display: flex;
     justify-content: center;
@@ -26,33 +27,36 @@
     margin-top: 5%;
     padding: 25px;
     background-color: white;
-    height: 500px;
+    height: 600px;
     border-radius: 25px;
     background: linear-gradient(to top, white, rgba(255, 255, 255, 0.2));
     display: flex;
     flex-direction: column;
     flex-basis: 450px;
-    
+
     /* Ensure the gradient covers the whole element */
     background-size: 100% 100%;
-    
+
     /* Optional: If you want to keep the white color at the bottom edge */
     background-position: bottom;
 
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    .my-account-header{
-       margin-top: 30px;
-       margin-bottom: 35px;
-       justify-content: center;
-       align-items: center;
-       display: flex;
+
+    .my-account-header {
+        margin-top: 30px;
+        margin-bottom: 35px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
     }
 }
+
 .account-info {
     background-color: transparent;
     border: none;
     padding: var(--padding-sm) 25px;
 }
+
 .account-info .col {
     // flex-grow: 0;
     // flex-shrink: 0;
@@ -68,17 +72,56 @@
     margin-bottom: 30px;
     padding-left: 10px;
 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    /* Subtle shadow for depth */
 
     /* Transition for smooth hover effect */
     transition: all 0.3s ease;
 
     /* Hover effects */
     &:hover {
-        background-color: #ECECEC; /* Lighter shade for hover */
-        border-color: #999; /* Darker border on hover */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* More pronounced shadow on hover */
-        transform: translateY(-2px); /* Slight lift effect */
+        background-color: #ECECEC;
+        /* Lighter shade for hover */
+        border-color: #999;
+        /* Darker border on hover */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* More pronounced shadow on hover */
+        transform: translateY(-2px);
+        /* Slight lift effect */
     }
 
-  }
+}
+
+
+//   portal pages
+
+.web-sidebar {
+    .sidebar-items {
+        .list-unstyled {
+            margin: 0;
+            padding: 0;
+        }
+
+        .sidebar-item {
+            font-weight: 800;
+            border: 1px solid #757373;
+            margin-bottom: 15px;
+            padding: 8px 12px;
+            transition: all 0.3s ease;
+            border-radius: 8px;
+            /* Adds rounded corners */
+            position: relative;
+            /* Required for smooth transform */
+
+        }
+
+        .sidebar-item:hover {
+            // color: white !important;
+            background: linear-gradient(to right, #1B5CAF, #337BD6);
+            /* Change border color on hover */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            /* Add a subtle shadow on hover for depth */
+            transform: translateY(-2px);
+        }
+    }
+}
