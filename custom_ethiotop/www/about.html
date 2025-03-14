@@ -2,29 +2,32 @@
 
 {% set default_intro = """<p><strong>About Us</strong><br>
 
-	Ethiotop Paint Manufacturing Company is a leading provider of high-quality paints and coatings, committed to enhancing durability, aesthetics, and protection across various surfaces. With a focus on innovation and excellence, we manufacture a wide range of paints designed for residential, commercial, and industrial applications.
-	
+    Ethiotop Paint Manufacturing Company is a leading provider of high-quality paints and coatings, committed to
+    enhancing durability, aesthetics, and protection across various surfaces. With a focus on innovation and excellence,
+    we manufacture a wide range of paints designed for residential, commercial, and industrial applications.
+
 </p>""" %}
 {% set title = doc.page_title or _("About Us") %}
 {% block page_content %}
 <div class="about-content-wrapper">
     <div class="row">
         <div class="image col-md-6">
-			<h2>About Us</h2>
-			<div class="image-placeholder">
-				<img src="/assets/custom_ethiotop/image/home-bg.png" alt="About Us Image" class="about-us-image">
-			</div>
-		</div>
+            <h2>About Us</h2>
+            <div class="image-placeholder">
+                <img src="/assets/custom_ethiotop/image/generated_image.png" alt="About Us Image"
+                    class="about-us-image">
+            </div>
+        </div>
         <article class="about-content col-md-6">
             {{ web_block(
-                'Hero',
-                values={
-                    "title": doc.page_title or _(" "),
-                    "subtitle": doc.company_introduction or default_intro
-                },
-                add_container=0,
-                add_top_padding=1,
-                add_bottom_padding=1,
+            'Hero',
+            values={
+            "title": doc.page_title or _(" "),
+            "subtitle": doc.company_introduction or default_intro
+            },
+            add_container=0,
+            add_top_padding=1,
+            add_bottom_padding=1,
             ) }}
 
             {% if doc.get({"doctype":"Company History"}) %}
@@ -62,23 +65,33 @@
                 <!-- {{ doc.footer or "" }} -->
             </section>
         </article>
-	
+
     </div>
-	<div class="about-footer-color">
-	<div class="div-container">
-		<div class="new-div-1 col-md-2">
-			<h4>Our Commitment</h4>
-			<p>At Ethiotop, we prioritize quality, sustainability, and customer satisfaction. Our products are formulated using advanced technology to ensure long-lasting performance and vibrant colors that meet the evolving needs of our clients. We strive to contribute to the construction and industrial sectors by delivering reliable and eco-friendly paint solutions.</p>
-		</div>
-		<div class="new-div-2 col-md-2">
-			<h4>Local Pride and Growth</h4>
-			<p>As a proudly Ethiopian company, we are dedicated to supporting local industries and promoting growth through high-standard manufacturing practices. Whether for home improvement, large-scale projects, or specialized coatings, Ethiotop Paint Manufacturing Company stands as a trusted partner in delivering premium paint solutions.</p>
-		</div>
-		<div class="new-div-3 col-md-2">
-			<h4>Innovation and Sustainability</h4>
-			<p>Innovation is at the core of our operations. We continuously invest in research and development to formulate eco-friendly, non-toxic, and weather-resistant paints that not only meet industry standards but also contribute to a greener future. Ethiotop is dedicated to reducing environmental impact by adopting sustainable production processes, minimizing waste, and offering low-VOC (volatile organic compound) paint options.</p>
-		</div>
-	</div>
-</div>
+    <div class="about-footer-color">
+        <div class="div-container">
+            <div class="new-div-1 col-md-2">
+                <h4>Our Commitment</h4>
+                <p>At Ethiotop, we prioritize quality, sustainability, and customer satisfaction. Our products are
+                    formulated using advanced technology to ensure long-lasting performance and vibrant colors that meet
+                    the evolving needs of our clients. We strive to contribute to the construction and industrial
+                    sectors by delivering reliable and eco-friendly paint solutions.</p>
+            </div>
+            <div class="new-div-2 col-md-2">
+                <h4>Local Pride and Growth</h4>
+                <p>As a proudly Ethiopian company, we are dedicated to supporting local industries and promoting growth
+                    through high-standard manufacturing practices. Whether for home improvement, large-scale projects,
+                    or specialized coatings, Ethiotop Paint Manufacturing Company stands as a trusted partner in
+                    delivering premium paint solutions.</p>
+            </div>
+            <div class="new-div-3 col-md-2">
+                <h4>Innovation and Sustainability</h4>
+                <p>Innovation is at the core of our operations. We continuously invest in research and development to
+                    formulate eco-friendly, non-toxic, and weather-resistant paints that not only meet industry
+                    standards but also contribute to a greener future. Ethiotop is dedicated to reducing environmental
+                    impact by adopting sustainable production processes, minimizing waste, and offering low-VOC
+                    (volatile organic compound) paint options.</p>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock %}
